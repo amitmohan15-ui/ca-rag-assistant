@@ -157,7 +157,7 @@ with tab_benchmark:
         st.markdown("---")
         st.subheader("Per-Question Test Case Results")
         display_cols = ["id", "question", "answerable", "contextual_recall", "contextual_precision", "faithfulness", "source_cited", "refused_correctly", "latency_seconds"]
-        st.dataframe(df_eval[[c for c in display_cols if c in df_eval.columns]], use_container_width=True)
+        st.dataframe(df_eval[[c for c in display_cols if c in df_eval.columns]])
 
 # ---------------------------------------------------------------------------
 # TAB 3: Thumbs-Down Feedback Queue
